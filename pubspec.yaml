@@ -1,0 +1,50 @@
+name: lab2pam
+description: "A new Flutter project."
+publish_to: 'none'
+
+version: 1.0.0+1
+
+environment:
+  sdk: ^3.5.2
+
+dependencies:
+  flutter:
+    sdk: flutter
+  cupertino_icons: ^1.0.8
+  smooth_page_indicator: ^1.0.0+2
+  get: ^4.6.5
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^4.0.0
+
+flutter:
+  uses-material-design: true
+
+  # Assets section
+  assets:
+    - assets/images/clinic.png
+    - assets/images/doctor.png
+    - assets/images/golden.png
+    - assets/images/republican.jpg
+    - assets/images/doctor1.png
+    - assets/images/doctor2.png
+    - assets/images/doctor3.png
+    - assets/images/doctor4.png
+    - assets/images/doctor5.png
+    - assets/images/dental.png
+    - assets/images/cardio.png
+    - assets/images/pulmo.png
+    - assets/images/general.png
+    - assets/images/neurology.png
+    - assets/images/gastro.png
+    - assets/images/lab.png
+    - assets/images/vaccination.png
+    - assets/v1.json
+
+  # To add custom fonts to your application, add a fonts section here
+  # fonts:
+  #   - family: CustomFont
+  #     fonts:
+  #       - asset: fonts/CustomFont-Regular.ttf
