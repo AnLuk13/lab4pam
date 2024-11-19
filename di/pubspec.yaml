@@ -1,0 +1,27 @@
+name: di
+description: A sample command-line application.
+version: 1.0.0
+# Uncomment and provide a valid URL if you have a repository.
+# repository: https://github.com/my_org/my_repo
+
+environment:
+  sdk: ">=3.5.2 <4.0.0"
+
+# Add regular dependencies here.
+dependencies:
+  # Reference to the domain and data packages using relative paths.
+  domain:
+    path: ../domain
+  data:
+    path: ../data
+  # Specify other dependencies if needed (e.g., for external packages).
+
+# Declare assets used in the project.
+flutter:
+  assets:
+    - ../assets/v1.json
+
+dev_dependencies:
+  # Add linting and testing packages.
+  lints: ^4.0.0
+  test: ^1.24.0

@@ -1,0 +1,19 @@
+name: data
+description: "Data layer for handling data sources and repositories."
+version: 1.0.0
+
+environment:
+  sdk: ^3.5.2
+
+dependencies:
+  flutter:
+    sdk: flutter
+
+  domain:
+    path: ../domain
+  # Add data-related dependencies here, e.g., for HTTP requests or database storage
+  # For example:
+  # http: ^0.15.0
+  # hive: ^2.0.0
+assets:
+  - ../assets/v1.json

@@ -1,0 +1,10 @@
+name: domain
+description: "Domain layer for business logic and entities."
+version: 1.0.0
+
+environment:
+  sdk: ^3.5.2
+
+dependencies:
+# No dependencies on Flutter or data layers to keep it pure
+# Include any essential pure Dart dependencies here
