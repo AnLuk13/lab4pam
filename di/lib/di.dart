@@ -14,7 +14,10 @@ class DI {
   late GetCategories getCategories;
   late GetMedicalCenters getMedicalCenters;
   late GetDoctors getDoctors;
-  void init() {
+
+  Future<void> init() async {
+    await dataSource.init();
+
     getBanners = GetBanners(BannerRepositoryImpl(dataSource));
     getCategories = GetCategories(CategoryRepositoryImpl(dataSource));
     getMedicalCenters = GetMedicalCenters(MedicalCenterRepositoryImpl(dataSource));

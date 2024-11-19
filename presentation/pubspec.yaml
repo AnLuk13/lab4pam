@@ -12,14 +12,14 @@ dependencies:
     path: ../domain
   di:
     path: ../di
-  # State management and UI libraries
   get: ^4.6.5
   smooth_page_indicator: ^1.0.0
-  # Add any other dependencies as needed
 
 flutter:
+  uses-material-design: true
+
   assets:
-    - ../assets/v1.json
+    - assets/v1.json
 
 dev_dependencies:
   flutter_test:

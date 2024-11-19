@@ -18,8 +18,8 @@ dependencies:
 
 # Declare assets used in the project.
 flutter:
-  assets:
-    - ../assets/v1.json
+#  assets:
+#    - ../assets/v1.json
 
 dev_dependencies:
   # Add linting and testing packages.

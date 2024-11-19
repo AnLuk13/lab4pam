@@ -6,29 +6,42 @@ import '../models/medical_center_model.dart';
 import '../models/doctor_model.dart';
 
 class LocalDataSource {
+  // Cache the loaded JSON to avoid multiple asset loading
+  Map<String, dynamic>? _cachedData;
+
+  // Method to initialize and load the data
+  Future<void> init() async {
+    if (_cachedData == null) {
+      final String response = await rootBundle.loadString('assets/v1.json');
+      _cachedData = json.decode(response);
+    }
+  }
+
   Future<List<BannerModel>> fetchBanners() async {
-    final String response = await rootBundle.loadString('assets/v1.json');
-    final data = json.decode(response);
-    return (data['banners'] as List).map((e) => BannerModel.fromJson(e)).toList();
+    await init(); // Ensure the data is loaded
+    return (_cachedData!['banners'] as List)
+        .map((e) => BannerModel.fromJson(e))
+        .toList();
   }
 
   Future<List<CategoryModel>> fetchCategories() async {
-    final String response = await rootBundle.loadString('assets/v1.json');
-    final data = json.decode(response);
-    return (data['categories'] as List).map((e) => CategoryModel.fromJson(e)).toList();
+    await init(); // Ensure the data is loaded
+    return (_cachedData!['categories'] as List)
+        .map((e) => CategoryModel.fromJson(e))
+        .toList();
   }
 
   Future<List<MedicalCenterModel>> fetchNearbyMedicalCenters() async {
-    final String response = await rootBundle.loadString('assets/v1.json');
-    final data = json.decode(response);
-    return (data['nearby_centers'] as List)
+    await init(); // Ensure the data is loaded
+    return (_cachedData!['nearby_centers'] as List)
         .map((e) => MedicalCenterModel.fromJson(e))
         .toList();
   }
 
   Future<List<DoctorModel>> fetchDoctors() async {
-    final String response = await rootBundle.loadString('assets/v1.json');
-    final data = json.decode(response);
-    return (data['doctors'] as List).map((e) => DoctorModel.fromJson(e)).toList();
+    await init(); // Ensure the data is loaded
+    return (_cachedData!['doctors'] as List)
+        .map((e) => DoctorModel.fromJson(e))
+        .toList();
   }
 }

@@ -31,7 +31,7 @@ dev_dependencies:
 flutter:
   uses-material-design: true
 
-  assets:
+#  assets:
 #    - assets/images/clinic.png
 #    - assets/images/doctor.png
 #    - assets/images/golden.png
@@ -49,4 +49,4 @@ flutter:
 #    - assets/images/gastro.png
 #    - assets/images/lab.png
 #    - assets/images/vaccination.png
-    - assets/v1.json
+#    - assets/v1.json

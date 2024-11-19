@@ -15,5 +15,5 @@ dependencies:
   # For example:
   # http: ^0.15.0
   # hive: ^2.0.0
-assets:
-  - ../assets/v1.json
+#assets:
+#  - ../assets/v1.json
