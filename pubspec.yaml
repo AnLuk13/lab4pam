@@ -1,35 +1,35 @@
-name: lab2pam
-description: "A new Flutter project."
-publish_to: 'none'
+#name: lab2pam
+#description: "A new Flutter project."
+#publish_to: 'none'
 
-version: 1.0.0+1
+#version: 1.0.0+1
+#
+#environment:
+#  sdk: ^3.5.2
 
-environment:
-  sdk: ^3.5.2
+#dependencies:
+#  flutter:
+#    sdk: flutter
+#  cupertino_icons: ^1.0.8
+#  smooth_page_indicator: ^1.0.0+2
+#  get: ^4.6.5
+#  # Add references to the local packages
+#  domain:
+#    path: domain
+#  data:
+#    path: data
+#  presentation:
+#    path: presentation
+#  di:
+#    path: di
+#
+#dev_dependencies:
+#  flutter_test:
+#    sdk: flutter
+#  flutter_lints: ^4.0.0
 
-dependencies:
-  flutter:
-    sdk: flutter
-  cupertino_icons: ^1.0.8
-  smooth_page_indicator: ^1.0.0+2
-  get: ^4.6.5
-  # Add references to the local packages
-  domain:
-    path: domain
-  data:
-    path: data
-  presentation:
-    path: presentation
-  di:
-    path: di
-
-dev_dependencies:
-  flutter_test:
-    sdk: flutter
-  flutter_lints: ^4.0.0
-
-flutter:
-  uses-material-design: true
+#flutter:
+#  uses-material-design: true
 
 #  assets:
 #    - assets/images/clinic.png

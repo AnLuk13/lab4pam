@@ -17,7 +17,7 @@ dependencies:
   # Specify other dependencies if needed (e.g., for external packages).
 
 # Declare assets used in the project.
-flutter:
+#flutter:
 #  assets:
 #    - ../assets/v1.json
 
